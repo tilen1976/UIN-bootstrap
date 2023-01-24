@@ -1,0 +1,35 @@
+{
+  "name": "uin-bootstrap",
+  "version": "1.0.0",
+  "description": "UIN emne 2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:watch": "sass --watch sass/main.scss:css/main.css",
+    "css:compile": "sass sass/main.scss:css/main.css",
+    "css:prefix": "postcss --use autoprefixer -b \"last 4 versions\" css/main.css -o css/main.css",
+    "css:compress": "css-minify -f css/main.css -o css",
+    "css:build": "npm.run-all css:compile css:prefix css:compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tilen1976/UIN-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tilen1976/UIN-bootstrap/issues"
+  },
+  "homepage": "https://github.com/tilen1976/UIN-bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concat": "^1.0.3",
+    "css-minify": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.57.1"
+  }
+}
