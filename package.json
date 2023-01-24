@@ -9,7 +9,7 @@
     "css:compile": "sass sass/main.scss:css/main.css",
     "css:prefix": "postcss --use autoprefixer -b \"last 4 versions\" css/main.css -o css/main.css",
     "css:compress": "css-minify -f css/main.css -o css",
-    "css:build": "npm.run-all css:compile css:prefix css:compress"
+    "css:build": "npm-run-all css:compile css:prefix css:compress"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/tilen1976/UIN-bootstrap#readme",
   "dependencies": {
-    "bootstrap": "^5.3.0-alpha1"
+    "bootstrap": "^5.3.0-alpha1",
+    "bootstrap-icons": "^1.10.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
